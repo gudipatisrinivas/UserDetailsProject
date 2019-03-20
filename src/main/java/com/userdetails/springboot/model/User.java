@@ -4,6 +4,14 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import java.io.Serializable;
+/**
+* 
+*
+* @author  Srinivas Gudipati
+* @version 1.0
+* @since   2019-03-20
+* This is the Entity Class that has the User info Object
+*/
 
 @Entity
 @Table(name="APP_USER")

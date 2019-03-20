@@ -6,7 +6,15 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
+/**
+* 
+*
+* @author  Srinivas Gudipati
+* @version 1.0
+* @since   2019-03-20
+* 
+* This class contains the Spring Data Reposirtoy related methods
+*/
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 

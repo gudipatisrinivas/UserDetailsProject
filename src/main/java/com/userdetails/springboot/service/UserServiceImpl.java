@@ -9,7 +9,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
+/**
+* 
+*@author  Srinivas Gudipati
+* @version 1.0
+* @since   2019-03-20
+* 
+* This is the ServiceImpl class that connects 
+* that makes a call to repository and get the User Object.
+*/
 
 @Service("userService")
 @Transactional
