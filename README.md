@@ -14,8 +14,11 @@ This application does the following.
 How to Install this Application :
 
 1.Check out the GIT Branch in to your SpringBoot Based project in STS.
+
 2.Make Sure that no other application is running on the port 8080.
+
 3.Make sure you have the NodeJS installed on you machine.
+
 4.Run this as Spring Boot Application and hit the below in the url.
 
 
