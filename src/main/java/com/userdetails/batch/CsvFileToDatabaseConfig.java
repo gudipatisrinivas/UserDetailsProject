@@ -20,7 +20,16 @@ import org.springframework.core.io.ClassPathResource;
 
 import com.userdetails.springboot.model.STATUS;
 import com.userdetails.springboot.model.User;
-
+/**
+* 
+*
+* @author  Srinivas Gudipati
+* @version 1.0
+* @since   2019-03-20
+* 
+* This is a Spring Batch based Class file that reads from 
+* CSVFile and pushes the changes to API
+*/
 @EnableBatchProcessing
 @Configuration
 public class CsvFileToDatabaseConfig {

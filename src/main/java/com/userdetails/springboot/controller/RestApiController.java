@@ -20,7 +20,13 @@ import com.userdetails.springboot.model.STATUS;
 import com.userdetails.springboot.model.User;
 import com.userdetails.springboot.service.UserService;
 import com.userdetails.springboot.util.CustomErrorType;
-
+/**
+* 
+*
+* @author  Srinivas Gudipati
+* @version 1.0
+* @since   2019-03-20
+*/
 @RestController
 @RequestMapping("/ui/api")
 public class RestApiController {
@@ -28,8 +34,15 @@ public class RestApiController {
 	public static final Logger logger = LoggerFactory.getLogger(RestApiController.class);
 
 	@Autowired
-	UserService userService; //Service which will do all data retrieval/manipulation work
-
+	UserService userService; 
+	
+       /**
+	   * Service which will do all data retrieval/manipulation work
+	   *@param args Unused.
+	   * @return ResponseEntity.
+	   * @exception Nothing.
+	   * 
+	   */
 	// -------------------Retrieve All Users---------------------------------------------
 
 	@RequestMapping(value = "/user/", method = RequestMethod.GET)
@@ -42,8 +55,14 @@ public class RestApiController {
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
 	}
 
-	// -------------------Retrieve Single User------------------------------------------
-
+	/**
+	   * Service which will do all data retrieval
+	   * /manipulation for User based on UserdID
+	   *@param args Unused.
+	   * @return ResponseEntity.
+	   * @exception Nothing.
+	   * 
+	   */
 	@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
 	public ResponseEntity<?> getUser(@PathVariable("id") long id) {
 		logger.info("Fetching User with id {}", id);
@@ -57,7 +76,14 @@ public class RestApiController {
 	}
 
 	// -------------------Create a User-------------------------------------------
-
+	   /**
+	   * Service which will do all data retrieval
+	   * /manipulation for User based on UserdID
+	   * @param User.
+	   * @return ResponseEntity.
+	   * @exception Nothing.
+	   * 
+	   */
 	@RequestMapping(value = "/user/", method = RequestMethod.POST)
 	public ResponseEntity<?> createUser(@RequestBody User user) {
 		logger.info("Creating User : {}", user);
